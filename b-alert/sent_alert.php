@@ -23,8 +23,8 @@ foreach($result as $row) {
 	$employee_name = $row['emp_name'];
 	if($birth_date == $today) {
 		$body = "<div style='border: 3px solid green;width:700px;'><table width='700px;'><tr><td> <br><h2> <span style='color:#060556;margin-left: 15px;'>  APA Wishes </span> </h2> </td><td rowspan='3'><img width='150' height= '50' src='https://picsum.photos/200/300/?random' style='float:right;height:150px;witdh:100px;'></td></tr><tr><td> <br><span style='color:#c30b34;margin-left: 15px;'> $employee_name </span> </td></tr><tr><td> <br><span style='color:#060556;margin-left: 15px;font-family: cursive;'> Who is celebrating his  birthday on $today!! </span> </td></tr><tr><td> <br><span style='color:#0f9db5;margin-left: 15px;font-family: cursive;'> A very Happy Birth day  !!</span> </td></tr><tr><td> <br><span style='color:#060556;margin-left: 15px;font-family: cursive;'> Have a Great day Hillarious year ahead. !!</span><br> </td></tr></table><br><br></div>";
-		//$mail->AddAddress("vaithi.d@apaengineering.com", "Victor");
-		$mail->AddAddress("victorshyammi@gmail.com", "Victor");
+		$mail->AddAddress("vaithi.d@apaengineering.com", "Victor");
+		//$mail->AddAddress("victorshyammi@gmail.com", "Victor");
 		$mail->SetFrom("victorshyammi@gmail.com", "Shyam");
 		$mail->Subject = "APA Engineering - Birth day Alert";
 		$mail->Body = $body;
