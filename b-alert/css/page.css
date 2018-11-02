@@ -1,0 +1,25 @@
+.navbar {
+	width: 100%;
+	height: 100px;
+	 background-image: url(../images/header.jpg);
+}
+.site-head {
+	font-size: 38;
+	color: white;
+	font-family: cursive;
+	padding: 20px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+	background: #356a7a;
+	height: 20px;
+}
+
+.footer-note {
+}
